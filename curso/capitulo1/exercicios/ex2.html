@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h2 {
+            margin-top: 100px;
+        }
+
+        table {
+            /*border-collapse: collapse;*/
+            width: 450px;
+            border-style: outset;
+        }
+        
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .cabecalho {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+
+    <h2>Célula com 2 colunas:</h2>
+        
+        <table>
+            <tr class="cabecalho">
+                <td>Nome</td>
+                <td colspan="2">Telefone</td>
+            </tr>
+            <tr>
+                <td>José das Colves</td>
+                <td>(22) 2128-6677</td>
+                <td>(22) 2128-7766</td>
+            </tr>
+        </table>
+
+    <h2>Célula com 2 linhas:</h2>
+    <table>
+            <tr>
+                <td class="cabecalho">Nome:</td>
+                <td>José das Colves</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="cabecalho">Telefone:</td>
+                <td>(22) 2128-6677</td>
+            </tr>
+            <tr>
+                <td>(22) 2128-7766</td>
+            </tr>
+        </table>
+
+    <h2>Tabela com Legenda</h2>
+        <table>
+            <caption>Total de despesas por mês</caption>
+            <tr class="cabecalho">
+                <td>Mês</td>
+                <td>Total</td>
+            </tr>
+            <tr>
+                <td>Janeiro</td>
+                <td>R$ 1.500,00</td>
+            </tr>
+            <tr>
+                <td>Fevereiro</td>
+                <td>R$ 1.470,00</td>
+            </tr>
+        </table>
+</body>
+</html>
